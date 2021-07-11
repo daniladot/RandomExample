@@ -1,0 +1,38 @@
+.ExampleRow {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .Example {
+    justify-content: flex-start;
+    display: flex;
+    width: 100px;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .Sign {
+    font-size: 20px;
+  }
+
+  .Answer {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #000000;
+  }
+
+  &[data-check='true'] {
+    .Answer {
+      border-bottom: 3px solid #008000;
+    }
+  }
+
+  &[data-check='false'] {
+    .Answer {
+      border-bottom: 3px solid #db002b;
+    }
+  }
+}

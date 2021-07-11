@@ -1,0 +1,21 @@
+.ExampleList{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+
+  .SpaceAnswer, .GoodAnswer, .BadAnswer{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #db002b;
+
+    span{
+      white-space: nowrap;
+    }
+  }
+
+  .GoodAnswer, .BadAnswer{
+    color: #008000;
+  }
+}
